@@ -4,13 +4,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 #
 data=[]
-csvf=sys.argv[1]  # input file name
+# input file name
+csvf=sys.argv[1]  
 with open(csvf) as f:  # read csv
   reader = csv.reader(f)
   l = [row for row in reader]
   data.append(l)
-#
-data=data[0]  # data conversion
+# data conversion
+data=data[0]  
 data=np.array(data)
 data=data.T  # transpose
 x=data[1].astype(np.float64)
