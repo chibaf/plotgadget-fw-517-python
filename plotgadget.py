@@ -2,13 +2,17 @@ import csv
 import sys
 import numpy as np
 #
-csvf=sys.argv[1]
-with open(csvf) as f:
+data=[]
+csvf=sys.argv[1]  # input file name
+with open(csvf) as f:  # read csv
   reader = csv.reader(f)
-  l = np.array([row for row in reader])
+  l = [row for row in reader]
+  data.append(l)
 #
-  l2=l.T
-  m=np.array([l2[i+1] for i in range(0,11)])
-  x=m.astype(np.float64)
-  print(x[0])
+data=data[0]
+data=np.array(data)
+data=data.T
+x=data[1].astype(np.float64)
+y=np.array([data[i+2].astype(np.float64) for i in range(0,9)])
+#
   
