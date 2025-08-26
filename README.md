@@ -1,3 +1,3 @@
 # plotgadget-fw-517-python
 
-<img width="747" height="594" alt="image" src="https://github.com/user-attachments/assets/d907a7a0-deea-4606-a951-331ffa4dbced" />
+<img width="719" height="615" alt="image" src="https://github.com/user-attachments/assets/dedb8e8e-2aaf-4d95-a910-ae85d3da8d13" />
