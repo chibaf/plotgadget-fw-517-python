@@ -48,7 +48,7 @@ power_onoff = [[], []]  # 電源オンオフ用のリスト（2個）
 chunk_size = 20  # データを11行ごとに処理
 
 # CSVファイルの読み込みとデータ処理
-with open(f_dir_name, 'r') as file:
+with open('/Users/chibaf/plotgadget/LR5-SSR_2025-08-26_H16_M33_S01.csv', 'r') as file:
     csv_reader = csv.reader(file)
     chunk = []
     for i, row in enumerate(csv_reader, 1):
