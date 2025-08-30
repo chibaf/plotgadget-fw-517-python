@@ -25,10 +25,10 @@ plt.clf()
 plt.ylim(-35,10)
 tl = [0] * 11
 hd = []
-tl[0], = plt.plot(x,y0,"r",label="y=0") #  y=0 line of red
 plt.title(csvf)
 for i in range(0,len(y)):
-  tl[i+1], = plt.plot(x,y[i], label="T" + str(i+1))
+  tl[i], = plt.plot(x,y[i], label="T" + str(i),linewidth=1)
+tl[10], = plt.plot(x,y0,"r",label="y=0") #  y=0 line of red
 for i in range(0,len(y)+1):
   hd.append(tl[i])
   plt.legend(handles=hd,loc='upper right',bbox_to_anchor=(0.0,0.5))
